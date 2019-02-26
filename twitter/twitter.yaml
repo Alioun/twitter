@@ -1,2 +1,12 @@
 DEFAULT:
   mongo_database: twitter
+
+pos:
+  pos_processed_strip_coll: !connect mongodb://pos_processed_strip
+
+api:
+  tweet_coll: !connect mongodb://tweets
+  consumer_key:         #check local.yaml
+  consumer_secret:      #check local.yaml
+  access_token:         #check local.yaml
+  access_token_secret:  #check local.yaml
